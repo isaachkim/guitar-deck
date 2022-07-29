@@ -2,21 +2,30 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import 'bootstrap/dist/css/bootstrap.css';
+import { useNavigate } from 'react-router-dom';
 
 function NavigationBar(props) {
+	let navigate = useNavigate();
+
+	function handleHome(){
+		navigate('/')
+	}
+	function handleC(){
+		navigate('/guitardeck/C')
+	}
+
 	return (
-		<Navbar variant='dark' bg='dark' expand='lg'>
+		<Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
 			<Container fluid>
-				<Navbar.Brand href='#home'>React-Bootstrap</Navbar.Brand>
-				<Navbar.Toggle aria-controls='navbar-dark-example' />
-				<Navbar.Collapse id='navbar-dark-example'>
-					<Nav>
+				<Navbar.Brand onClick={handleHome}>Home</Navbar.Brand>
+				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
+				<Navbar.Collapse id='responsive-navbar-nav'>
+					<Nav className='mr=auto'>
 						<NavDropdown
 							id='nav-dropdown-dark-example'
-							title='Dropdown'
+							title='Chords'
 							menuVariant='dark'>
-							<NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
+							<NavDropdown.Item onClick={handleC}>C</NavDropdown.Item>
 							<NavDropdown.Item href='#action/3.2'>
 								Another action
 							</NavDropdown.Item>

@@ -1,0 +1,54 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Allows elements to stay true to intended size */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Maintains intended width */
+html {
+    width: 100%;
+}
+
+body {
+    /* Takes full width of screen */
+    width: 100%;
+    /* Doesn't allow the body to take more than 1000px of the screen width */
+    max-width: 1000px;
+    /* Makes sure the body takes full height of page */
+    min-height: 100%;
+    /* Margin is assigned automatically */
+    margin: 0 auto;
+    /* Sets default fonts for the page */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: white;
+    color: rgb(216, 218, 220);
+    /* Allows page to be modified with flexbox */
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+/* Basic Reset */
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    text-indent: none;
+    list-style-type: none;
+}
+
+.navbar {
+    width: 100%;
+}
