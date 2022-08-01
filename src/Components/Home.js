@@ -9,7 +9,7 @@ function Home(props) {
 		const handleClose = () => setShow(false);
 		const handleShow = () => setShow(true);
 	return (
-		<>
+		<div className='home'>
 			<div>
 				<h1>Welcome to Guitar-Deck</h1>
 				<h2>instructions</h2>
@@ -31,7 +31,7 @@ function Home(props) {
 					</Button>
 				</Modal.Footer>
 			</Modal>
-		</>
+		</div>
 	);
 }
 

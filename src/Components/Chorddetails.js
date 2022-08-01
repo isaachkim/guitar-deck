@@ -15,7 +15,7 @@ function Chorddetails(props) {
 			.catch((err) => {
 				console.error(err);
 			});
-	}, []);
+	}, [chord]);
 
 	if (!chordInput) {
 		return;
@@ -25,6 +25,8 @@ function Chorddetails(props) {
     <div>
         <title>{chordInput.name}</title>
         <h2>{chordInput.chord}</h2>
+        <img src={chordInput.imageURL} alt={chordInput.name} />
+        <p>{chordInput.details}</p>
     </div>)
 	
 }

@@ -16,7 +16,6 @@ function Chords(props) {
 							['E3', 'G3', 'B3'],
 							null,
 						]}
-						// steps={['G2', 'B2', 'D','G', 'D4', 'G4']}
 						volume={-4}
 						pan={0}
 						// mute={false}
@@ -28,11 +27,13 @@ function Chords(props) {
 						<Instrument type='fmSynth' />
 						<Effect type='reverb' />
 					</Track>
-					<Track>
+					<Track 
+					steps={['D3', null, 'C3']}
+					>
 						<Instrument
 							type='sampler'
 							samples={{
-								C3: './',
+								C3: '/audio/G-chord.wav',
 								D3: 'path/to/snare.mp3',
 								E3: 'path/to/hihat.mp3',
 							}}

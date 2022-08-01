@@ -10,12 +10,42 @@ function NavigationBar(props) {
 	function handleHome(){
 		navigate('/')
 	}
-	function handleC(){
-		navigate('/guitardeck/C')
+	function handleAm(){
+		navigate('/guitardeck/Am')
+	}
+	function handleA() {
+		navigate('/guitardeck/A');
+	}
+	function handleC() {
+		navigate('/guitardeck/C');
+	}
+	function handleD() {
+		navigate('/guitardeck/D');
+	}
+	function handleDm() {
+		navigate('/guitardeck/Dm');
+	}
+	function handleE() {
+		navigate('/guitardeck/E');
+	}
+	function handleEm() {
+		navigate('/guitardeck/Em');
+	}
+	function handleF() {
+		navigate('/guitardeck/F');
+	}
+	function handleG() {
+		navigate('/guitardeck/G');
 	}
 
+
 	return (
-		<Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
+		<Navbar
+			collapseOnSelect
+			expand='lg'
+			bg='dark'
+			variant='dark'
+			className='navbar'>
 			<Container fluid>
 				<Navbar.Brand onClick={handleHome}>Home</Navbar.Brand>
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
@@ -25,15 +55,15 @@ function NavigationBar(props) {
 							id='nav-dropdown-dark-example'
 							title='Chords'
 							menuVariant='dark'>
+							<NavDropdown.Item onClick={handleAm}>Am</NavDropdown.Item>
+							<NavDropdown.Item onClick={handleA}>A</NavDropdown.Item>
 							<NavDropdown.Item onClick={handleC}>C</NavDropdown.Item>
-							<NavDropdown.Item href='#action/3.2'>
-								Another action
-							</NavDropdown.Item>
-							<NavDropdown.Item href='#action/3.3'>Something</NavDropdown.Item>
-							<NavDropdown.Divider />
-							<NavDropdown.Item href='#action/3.4'>
-								Separated link
-							</NavDropdown.Item>
+							<NavDropdown.Item onClick={handleD}>D</NavDropdown.Item>
+							<NavDropdown.Item onClick={handleDm}>Dm</NavDropdown.Item>
+							<NavDropdown.Item onClick={handleE}>E</NavDropdown.Item>
+							<NavDropdown.Item onClick={handleEm}>Em</NavDropdown.Item>
+							<NavDropdown.Item onClick={handleF}>F</NavDropdown.Item>
+							<NavDropdown.Item onClick={handleG}>G</NavDropdown.Item>
 						</NavDropdown>
 					</Nav>
 				</Navbar.Collapse>

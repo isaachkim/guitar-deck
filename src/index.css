@@ -28,7 +28,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: white;
-    color: rgb(216, 218, 220);
+    /* color: rgb(216, 218, 220); */
     /* Allows page to be modified with flexbox */
     display: flex;
     justify-content: center;
@@ -49,6 +49,6 @@ li {
     list-style-type: none;
 }
 
-.navbar {
-    width: 100%;
+header {
+    width: 100vw;
 }
