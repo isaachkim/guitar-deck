@@ -10,7 +10,8 @@ function Chorddetails(props) {
 	const [notes, setNotes] = useState(null);
 
 	useEffect(() => {
-		const url = `http://localhost:8080/guitardeck/${chord}`;
+		const url = `https://guitar-deck-mern.herokuapp.com/guitardeck/${chord}`;
+		// const url = `http://localhost:8080/guitardeck/${chord}`;
 		fetch(url)
 			.then((res) => res.json())
 			.then((res) => {
