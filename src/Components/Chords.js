@@ -1,10 +1,37 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Song, Track, Instrument, Effect } from 'reactronica';
+
+
 function Chords(props) {
+	  const [isPlaying, setIsPlaying] = useState(false);
+   const [notes, setNotes] = useState(null);
+
+
+	function onChange(){
+		setIsPlaying(true)
+	}
+	function onOff(){
+		setIsPlaying(false)
+	}
+
     return (
 			<div>
-				hello
-				<Song isPlaying={false} bpm={70}>
+				<button onClick={onChange}>On</button>
+
+				<button onClick={onOff}>off</button>
+				<button
+					onMouseDown={() => setNotes([{ name: 'D3' }])}
+					onMouseUp={() => setNotes(null)}>
+					click
+				</button>
+				<button
+					onClick={() => setNotes([{ name: 'G3' }])}
+					onMouseUp={() => setNotes(null)}
+					>
+					click
+				</button>
+
+				<Song isPlaying={isPlaying} bpm={70}>
 					<Track
 						steps={[
 							['A3', 'E3', 'C3'],
@@ -27,15 +54,17 @@ function Chords(props) {
 						<Instrument type='fmSynth' />
 						<Effect type='reverb' />
 					</Track>
-					<Track 
-					steps={['D3', null, 'C3']}
-					>
+					<Track steps={['D3', null, 'C3']}>
 						<Instrument
 							type='sampler'
+							notes={notes}
 							samples={{
-								C3: '/audio/G-chord.wav',
-								D3: 'path/to/snare.mp3',
-								E3: 'path/to/hihat.mp3',
+								G3: './G-chord.wav',
+								D3: './test.wav',
+								// E3: 'path/to/hihat.mp3',
+							}}
+							onLoad={(buffers) => {
+								// Runs when all samples are loaded
 							}}
 						/>
 					</Track>

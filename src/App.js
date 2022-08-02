@@ -4,7 +4,7 @@ import NavigationBar from './Components/NavigationBar';
 import Home from './Components/Home'
 import Chorddetails from './Components/Chorddetails';
 import Chords from './Components/Chords'
-
+import DrumPads from './Components/DrumPads'
 
 function App() {
 	return (
@@ -15,6 +15,7 @@ function App() {
 			<main>
 				<Routes>
 					<Route path='/chord' element={<Chords />} />
+					<Route path='/drum' element={<DrumPads />} />
 
 					<Route path='/' element={<Home />} />
 					<Route path='/guitardeck/:chord' element={<Chorddetails />} />
