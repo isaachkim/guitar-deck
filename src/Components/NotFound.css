@@ -1,0 +1,23 @@
+.notFound {
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+    overflow: hidden;
+    text-align: center;
+    background-image: url("/public/images/brokenguitar.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.notFound>img {
+    padding: 30px;
+}
+
+.notFound>h2 {
+    color: white;
+}
+
+.here {
+    color: rgb(62, 138, 192);
+}

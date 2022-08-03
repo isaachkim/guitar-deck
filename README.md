@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# NASA Daily Photo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![This is an image](/public/images/main-page-p4.png)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+This website will teach the user the basics of learning how to play the guitar. You will be welcomed with a page and an option to open the instructions. There will be a navigation bar that will lead to an individual guitar chord page the user would like to learn.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- JSX
+- CSS
+- JavaScript
+- React
+- HTML
+- Reactronica
+- Backend: Express, Node.js
+- Database: MongoDB
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation Instructions
 
-### `npm test`
+Visit [Guitar-Deck!](https://guitardeck.netlify.app/) to view the webpage or clone this repository.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contribution Guidelines
 
-### `npm run build`
+Any contributions will be appreciated. Please fork, clone and submit a pull request to contribute!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## User Stories
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-As a user I want a homepage with instructions so that I can understand how the app functions.
+-As a user I want to access chords from any part of the app so that I can navigate through them easily.
+-As a user I want a details page with a image of the chord displayed and its details so that I can learn from the app.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Wireframes
 
-### `npm run eject`
+![This is an image](/public/images/wireframes1.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![This is an image](/public/images/wireframes2.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Hurdles
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Reactronica is the new technology that was implemented into this site. It was challenging to figure out a way to connect Reactronica with my backend.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- The pathing for the audio files for the Reactronica was challenging in terms of finding the correct location and the correct folder to store them in.
 
-## Learn More
+- Bootstrap was used for the navbar and it was difficult to customize the navbar to my preferences.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Resources
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Html color codes](https://htmlcolorcodes.com/) helped with choosing the best colors for the webpage.
 
-### Code Splitting
+[Favicon maker](https://www.favicon.cc/?) image to favicon converter.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Image Host API](https://postimg.cc/gallery/sDftCsN/e3697dca) image hosting for the backend.

@@ -9,7 +9,7 @@ function Home(props) {
 		const handleShow = () => setShow(true);
 	return (
 		<div className='home'>
-			<title>Homepage</title>
+			<title>Guitar-Deck</title>
 			<div className='home-container'>
 				<h1>Welcome to Guitar-Deck</h1>
 				<h2>click below for instructions</h2>
