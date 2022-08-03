@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { Song, Track, Instrument, Effect } from 'reactronica';
+import { Track, Instrument } from 'reactronica';
+import './Chorddetails.css'
 
 function Chorddetails(props) {
 	const { chord } = useParams();
@@ -27,16 +28,13 @@ function Chorddetails(props) {
 	}
 
 	return (
-		<>
-			<div>
-				<title>{chordInput.name}</title>
-				<h2>{chordInput.chord}</h2>
-				<img src={chordInput.imageURL} alt={chordInput.name} />
-				<p>{chordInput.details}</p>
-			</div>
-
-			{/* reactronica */}
-			<div>
+		<div className='details-container'>
+			<title>{chordInput.name}</title>
+			<h2>{chordInput.name}</h2>
+			<img className='chord-image' src={chordInput.imageURL} alt={chordInput.name} />
+			<p>{chordInput.details}</p>
+			<div className='sound-button'>
+				Click for Sound &nbsp;
 				<button
 					style={{
 						backgroundColor: '#E59866',
@@ -45,7 +43,10 @@ function Chorddetails(props) {
 					onMouseUp={() => setNotes(null)}>
 					🔊
 				</button>
+			</div>
 
+			{/* reactronica */}
+			<div>
 				<Track>
 					<Instrument
 						type='sampler'
@@ -67,7 +68,7 @@ function Chorddetails(props) {
 					/>
 				</Track>
 			</div>
-		</>
+		</div>
 	);
 	
 }

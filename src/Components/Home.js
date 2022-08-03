@@ -10,17 +10,19 @@ function Home(props) {
 	return (
 		<div className='home'>
 			<title>Homepage</title>
-			<div>
+			<div className='home-container'>
 				<h1>Welcome to Guitar-Deck</h1>
-				<h2>instructions</h2>
+				<h2>click below for instructions</h2>
+				<div className='home-instructions'>
+					<button
+						style={{
+							backgroundColor: '#DC7633',
+						}}
+						onClick={handleShow}>
+						Instructions
+					</button>
+				</div>
 			</div>
-			<button
-				style={{
-					backgroundColor: '#DC7633',
-				}}
-				onClick={handleShow}>
-				Instructions
-			</button>
 
 			<Modal
 				className={'modal'}
@@ -39,8 +41,9 @@ function Home(props) {
 				</Modal.Body>
 				<Modal.Footer>
 					<button
+						className='modal-button'
 						style={{
-							backgroundColor: '#99A3A4',
+							backgroundColor: '#3498DB',
 						}}
 						onClick={handleClose}>
 						Close

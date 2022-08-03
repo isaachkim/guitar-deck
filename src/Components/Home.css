@@ -11,3 +11,45 @@
 .instructions{
     width: 100%;
 }
+
+.home-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    font-family: 'Jost', sans-serif;
+}
+.home-container>h1{
+    grid-row: 1;
+    grid-column: 2;
+    text-align: center;
+    padding: 30px;
+    font-size: 2.8em;
+    color: rgb(199, 199, 199);
+}
+.home-container>h2{
+    grid-row: 2;
+    grid-column: 2;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.4em;
+    color: rgb(199, 199, 199);
+}
+
+.home-instructions{
+    grid-row: 3;
+    grid-column: 2;
+    text-align: center;
+}
+
+.modal-button:hover {
+    border-color: #E59866;
+}
+
+@media screen and (min-width: 1000px) {
+    .home-container>h1 { 
+        font-size: 3.8em; 
+        }
+        .home-container>h2 {
+        font-size: 2.4em; 
+        }
+}

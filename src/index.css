@@ -64,7 +64,7 @@ button {
     border-radius: 2em;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-weight: 300;
     color: #FFFFFF;
     text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
@@ -80,8 +80,6 @@ button:hover {
 
 .logo {
     height: 100%;
-    
-    
 }
 
 .logo-container {
@@ -99,4 +97,32 @@ button:hover {
 .logo-container:hover {
     cursor: pointer;
     border-color: white;
+}
+
+
+@media screen and (min-width: 1000px) {
+.logo {
+        height: 100%;
+    }
+
+    .logo-container {
+        display: inline-block;
+        height: 3rem;
+        width: 3rem;
+        border: solid 2px black;
+        border-radius: 50%;
+        transition: all 0.2s;
+        padding: 0.1em 0.1em;
+        position: relative;
+        left: 1rem;
+    }
+
+    .logo-container:hover {
+        cursor: pointer;
+        border-color: white;
+    }
+
+    .navbar{
+        height: 7vh;
+    }
 }
