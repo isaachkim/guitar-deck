@@ -47,13 +47,27 @@ function NavigationBar(props) {
 			variant='dark'
 			className='navbar'>
 			<Container fluid>
-				<Navbar.Brand onClick={handleHome}>Home</Navbar.Brand>
-				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
-				<Navbar.Collapse id='responsive-navbar-nav'>
-					<Nav className='mr=auto'>
+				<Navbar.Brand onClick={handleHome}>
+					<div className='logo-container'>
+						<img
+							className='logo'
+							src={require('../images/guitarimage2.png')}
+							alt='saturn-logo'
+							onClick={handleHome}
+						/>
+					</div>
+				</Navbar.Brand>
+
+				<Navbar>
+					<Nav className='mr-auto'>
 						<NavDropdown
 							id='nav-dropdown-dark-example'
-							title='Chords'
+							title={
+								<button
+									style={{
+										backgroundColor: '#E59866',
+									}}>Chords</button>
+							}
 							menuVariant='dark'>
 							<NavDropdown.Item onClick={handleAm}>Am</NavDropdown.Item>
 							<NavDropdown.Item onClick={handleA}>A</NavDropdown.Item>
@@ -66,7 +80,7 @@ function NavigationBar(props) {
 							<NavDropdown.Item onClick={handleG}>G</NavDropdown.Item>
 						</NavDropdown>
 					</Nav>
-				</Navbar.Collapse>
+				</Navbar>
 			</Container>
 		</Navbar>
 	);

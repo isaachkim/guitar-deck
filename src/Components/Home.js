@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './Home.css'
 
@@ -10,25 +9,42 @@ function Home(props) {
 		const handleShow = () => setShow(true);
 	return (
 		<div className='home'>
+			<title>Homepage</title>
 			<div>
 				<h1>Welcome to Guitar-Deck</h1>
 				<h2>instructions</h2>
 			</div>
-			<Button variant='primary' onClick={handleShow}>
+			<button
+				style={{
+					backgroundColor: '#DC7633',
+				}}
+				onClick={handleShow}>
 				Instructions
-			</Button>
+			</button>
 
-			<Modal className = {"modal"} show={show} onHide={handleClose} animation={false}>
+			<Modal
+				className={'modal'}
+				show={show}
+				onHide={handleClose}
+				animation={false}>
 				<Modal.Header closeButton>
 					<Modal.Title>Instructions</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
-					<img className={'instructions'} src='images/instructions.jpeg' alt='' />
+					<img
+						className={'instructions'}
+						src='images/instructions.jpeg'
+						alt=''
+					/>
 				</Modal.Body>
 				<Modal.Footer>
-					<Button variant='secondary' onClick={handleClose}>
+					<button
+						style={{
+							backgroundColor: '#99A3A4',
+						}}
+						onClick={handleClose}>
 						Close
-					</Button>
+					</button>
 				</Modal.Footer>
 			</Modal>
 		</div>

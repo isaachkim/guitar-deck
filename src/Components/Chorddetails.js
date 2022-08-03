@@ -23,7 +23,7 @@ function Chorddetails(props) {
 	}, [chord]);
 
 	if (!chordInput) {
-		return;
+		return<p>Page is loading...</p>;
 	}
 
 	return (
@@ -38,9 +38,12 @@ function Chorddetails(props) {
 			{/* reactronica */}
 			<div>
 				<button
+					style={{
+						backgroundColor: '#E59866',
+					}}
 					onClick={() => setNotes([{ name: chordInput.sound }])}
 					onMouseUp={() => setNotes(null)}>
-					click
+					🔊
 				</button>
 
 				<Track>
