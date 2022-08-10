@@ -1,4 +1,4 @@
-# NASA Daily Photo
+# Guitar-Deck
 
 ![This is an image](/public/images/main-page-p4.png)
 
