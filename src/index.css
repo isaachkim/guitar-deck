@@ -33,7 +33,7 @@ body {
     /* Allows page to be modified with flexbox */
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* Basic Reset */
